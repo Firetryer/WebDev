@@ -1,0 +1,17 @@
+body, div{
+	background-color: #28284a;
+}
+
+
+p {
+	color: white;
+}
+
+.animation_section {
+	margin-top: 100px;
+}
+
+#imgplaceholder{
+	width: 250px;
+	height: 250px
+}
