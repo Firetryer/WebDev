@@ -5,13 +5,16 @@ body, div{
 
 p {
 	color: white;
+	text-align: center;
 }
 
+
 .animation_section {
-	margin-top: 100px;
+	margin-top: 120px;
+
 }
 
 #imgplaceholder{
-	width: 250px;
-	height: 250px
+	width: 400px;
+	height: 400px
 }
