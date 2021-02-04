@@ -5,21 +5,44 @@
         <meta name="description" content="Javascript animation">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="static/styles.css">
+        <link rel="stylesheet" href="static/topnav.css">
 		<title>animation</title>
     </head>
     <body>
 		<script src="static/app.js"></script>
-    	<a href="#animation_display">
-    		<img src="static/header.png" class="img-fluid">
-    	</a>
+
+		<div class="row container-fluid">
+			<div class="justify-content-center d-flex navigator">
+				<a href="#anm1">
+					<h2>Animation 1</h2>
+				</a>
+				<a href="#anm2">
+					<h2>Animation 2</h2>
+				</a>
+				<a href="#anm3">
+					<h2>Animation 3</h2>
+				</a>
+				<a href="#anm4">
+					<h2>Animation 4</h2>
+				</a>
+				<a href="#anm5">
+					<h2>Animation 5</h2>
+				</a>				
+			</div>
+		</div>
+
+		<div class="container-fluid nav_hider">asdasd</div>
+
+    	<img src="static/header.png" class="img-fluid topimage">
+
 
     	<div id="animation_display" class="container">
+
+    		<div class="row" id="anm1"></div>
 	    	<div class="row animation_section">
 	    		<div class="col-5 p-0 animation_holder">
 	    			<!-- Animation Goes Here -->
 	    			<div class = "animation1 "></div>
-
-	    			
 	    		</div>
 	    		<div class="col d-flex">
 	    			<p class="align-self-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -30,7 +53,8 @@
 	    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	    		</div>
 	    	</div>
-
+	    	
+	    	<div class="row" id="anm2"></div>
 	    	<div class="row animation_section">
 	    		<div class="col-5 p-0 animation_holder">
 	    			<!-- Animation Goes Here -->
@@ -48,6 +72,7 @@
 	    		</div>
 	    	</div>
 
+	    	<div class="row" id="anm3"></div>
 	    	<div class="row animation_section">
 	    		<div class="col-5 p-0  animation_holder">
 	    			<!-- Animation Goes Here -->
@@ -63,6 +88,7 @@
 	    		</div>
 	    	</div>
 
+	    	<div class="row" id="anm4"></div>
 	    	<div class="row animation_section">
 	    		<div class="col-5 p-0 animation_holder">
 	    			<!-- Animation Goes Here -->
@@ -80,6 +106,7 @@
 	    		</div>
 	    	</div>
 
+	    	<div class="row" id="anm5"></div>
 	    	<div class="row animation_section">
 	    		<div class="col-5 p-0 animation_holder">
 	    			<!-- Animation Goes Here -->
@@ -98,9 +125,9 @@
 	    	</div>
 
     	</div>
-
-    	<img src="static/footer.png" class="pt-4 img-fluid">
     	
+    	<img src="static/footer.png" class="pt-4 img-fluid">
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
      	<script src="static/app.js"></script> 
     </body>

@@ -54,6 +54,10 @@ p {
     100% {background-color:red; left:0px; top:0px;}
 }
 
+.topimage {
+    margin-top: 70px;
+}
+
 .animation2 {
     width: 100px;
     height: 100px;

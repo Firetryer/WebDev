@@ -1,0 +1,28 @@
+.navigator{
+	background-color: #917ba7;
+	border-radius: 25px;
+	position:fixed;
+	top: -20px;
+	left:-1px;
+	padding-top: 40px;
+	height: 110px;
+}
+
+.nav_hider {
+	height:110px;
+	position:absolute;
+	background-color: #28284a;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.navigator h2 {
+	color: #ece4e9;
+	font-size: 25px;
+	margin-left: 65px;
+	margin-right: 65px;
+
+}
