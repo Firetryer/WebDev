@@ -34,15 +34,15 @@ p {
     height: 100px;
     background-color: red;
     position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: animation1; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    animation-name: animation1;
     animation-duration: 8s;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-iteration-count: infinite;
 }
-@keyframes example {
+@keyframes animation1 {
     0%   {background-color:red; left:0px; top:0px;}
     12.5%   {background-color:orange; left:180px; top:0px;}
     25%  {background-color:yellow; left:360px; top:0px;}
@@ -53,3 +53,83 @@ p {
     87.5% {background-color:#651e3e; left:0px; top:180px;}
     100% {background-color:red; left:0px; top:0px;}
 }
+
+.animation2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    
+    animation-name: animation2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+
+@keyframes animation2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    12.5%   {background-color:orange; left:180px; top:0px;}
+    25%  {background-color:yellow; left:360px; top:0px;}
+    37.5%  {background-color:green; left:360px; top:180px;}
+    50%  {background-color:blue; left:360px; top:360px;}
+    62.5%  {background-color:indigo; left:180px; top:360px;}
+    75%  {background-color:violet; left:0px; top:360px;}
+    87.5% {background-color:#651e3e; left:0px; top:180px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.animation3 {
+    height: 305px;
+    width: 305px;
+    margin: 78px;
+    background-color: red;
+    animation-name: animation3;
+    animation-duration: 4s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 1;
+    animation-direction: alternate;
+    animation-iteration-count: 4;
+    animation-fill-mode: none;
+    animation-play-state: initial;
+  }
+
+  @keyframes animation3 {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    12.5% {
+        background-color: orange;
+        border-radius: 80%;
+    }
+    25% {
+        background-color: yellow;
+        border-radius: 60%;
+    }
+    37.5% {
+        background-color: green;
+        border-radius: 40%;
+    }
+    50% {
+      background-color: blue;
+      border-radius: 20%;
+    }
+    62.5% {
+        background-color: indigo;
+    }
+    75% {
+        background-color: violet;
+    }
+    87.5% {
+        background-color: #651e3e;
+    }
+    100% {
+      transform: scale(1);
+      background-color: red;
+    }
+  }
