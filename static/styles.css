@@ -1,15 +1,20 @@
-body, div{
+body{
 	background-color: #28284a;
 }
 
 
-p {
+.animation_section p {
 	color: white;
 	text-align: left;
 	font-weight: bold;
 	font-size: 22px;
 }
 
+.footer {
+    height:100px;
+    margin-top: 140px;
+    background-color: #1F1F3F;
+}
 
 .animation_section {
 	margin-top: 100px;
