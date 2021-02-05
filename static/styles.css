@@ -142,3 +142,81 @@ body{
       background-color: red;
     }
   }
+
+.animation4 {
+    width: 11rem;
+    height: 11rem;
+    background: #011638;
+    border-radius: 50%;
+    position: relative;
+    animation: anim4pulse 5s ease infinite alternate, anim4nudge 5s linear infinite alternate;
+}
+
+@keyframes anim4pulse {
+    0% ,100% { background: #011638; }
+    10% { background: #2e294e; }
+    20% { background: #9055a2; }
+    30% { background: #d499b9; }
+    40% { background: #e8c1c5; }
+    50% { background: #36213e; }
+    60% { background: #554971; }
+    70% { background: #63768d; }
+    80% { background: #8ac6d0; }
+    90% { background: #b8f3ff; }
+}
+
+@keyframes anim4nudge {
+    0%, 100% { transform: translate(11rem, 12rem); }
+    30% { transform: translate(9.75rem, 0); }
+    60% { transform: translate(1.75rem, 0); }
+}
+
+.animation5 {
+    width: 11.5rem;
+    height: 11.5rem;
+    display: flex;
+    margin-top: 10rem;
+    margin-left: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c95d63;
+    box-shadow: .3rem .3rem 1.5rem #000;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 1.25s;
+}
+
+.animation5 .anim5_box {
+    opacity: 1;
+    color: #473BF0;
+    transform: translate(50px);
+    transition: opacity 0.5s 1.5s, transform 0.5s 0.5s;
+}
+
+.animation5 .anim5_rect {
+    opacity: 0;
+    color: #700548;
+    transform: translateX(500px);
+    transition: opacity 0.5s 1s, transform 0.5s 1s;
+}
+
+.animation5:hover {
+    width: 300px;
+    background-color: #496ddb;
+    box-shadow: -5px 5px 25px #000;
+}
+
+.animation5:hover .anim5_box {
+    opacity: 0;
+    color: #362023;
+    background: #717ec3;
+    transform: translateX(-35rem);
+}
+
+.animation5:hover .anim5_rect {
+    opacity: 10;
+    color: #1b998b;
+    background: #e3d985;
+    transform: translateX(-7.5rem);
+}
